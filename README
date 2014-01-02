@@ -1,0 +1,53 @@
+README
+
+Name: HebrewFontsConverter
+Version: 1.0
+Author: Benjamin Schnabel
+Email: Benjamin-777@gmx.de
+DATE: 01-02-2014
+Website: www.benjaminschnabel.de
+License: GPL 2.0
+
+Description:
+This is converter for Texts written BwHebb and BwGrk fonts to unicode and back.
+
+Usage:
+This program is written in python 3.3.3 use python to compile and to run.
+When you run the program it will ask you for to file you want to convert. You can have multiple lines. But only plain text files (.txt).
+You need to choose which type of conversion you want to make.
+There are four methods.
+1. From a file written in Bwhebb font to Hebrew (utf-8).
+2. From a file written in Hebrew (utf-8) to Bwhebb font.
+3. From a file written in BwGrk font to Greek (utf-8).
+4. From a file written in Greek (utf-8) to BwGrk font.
+Name a file you want to return the text to. If it does not exist it will be created, otherwise it will be overwritten.
+
+The files greek.txt and hebrew.txt contain the charset (according to their languages).
+It has to be a plain text file (.txt).
+It has to be written like this.
+1. The BwHebb Letter in Unicode as a char.
+2. Space
+2. The Hebrew or Greek letter in Unicode as a char.
+You can also use two characters or more. But there has to be a space between the original language and the new language.
+For the vowels, accents and trophes with has to switched with the letter before, write: "vowels:" (without the ")
+The letters will be changed by one place with the letter in front of it (It is caused because of Problem of Right-To-Left in Hebrew).
+It can work with Greek too.
+
+Important:
+The Backslash / is used by BwHebb and cannot be used in word.
+If you want to use it, use it with a space in front and back of it (" / ").
+Then the / will be left (without the spaces).
+
+Files:
+__init__.py <- Source file
+greek.txt	<- File for Greek charset 
+hebrew.txt	<- File for Hebrew charset
+README
+
+Bugs:
+Most likely not all vowels, accents 
+In case your input file is not working, try encoding it with utf-8.
+Please report all Bugs to Benjamin-777@gmx.de.
+
+Updates:
+02-01-2014 Version 1.0 with Bwhebb to Hebrew in unicode working. Others are not tested yet. All Files complete uploaded. No trophes in Hebrew added.
